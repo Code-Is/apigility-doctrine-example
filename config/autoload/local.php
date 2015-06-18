@@ -5,12 +5,13 @@ return array(
             // default connection name
             'orm_default' => array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'eventmanager' => 'orm_default',
                 'params' => array(
                     'host'     => 'localhost',
                     'port'     => '3306',
-                    'user'     => 'username',
-                    'password' => 'password',
-                    'dbname'   => 'database',
+                    'user'     => 'root',
+                    'password' => '',
+                    'dbname'   => 'DoctrineExample',
                 )
             )
         )
