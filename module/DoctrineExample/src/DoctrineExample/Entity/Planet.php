@@ -19,8 +19,12 @@ class Planet {
      */
     protected $id;
     
-    /** @ORM\Column(type="string", length=100, nullable=false) */
+    /** @ORM\Column(type="string", length=100, nullable=false, unique=true) */
     protected $name;
+
+    public function getId() {
+        return $this->id;
+    }
      
     public function getName() {
         return $this->name;
